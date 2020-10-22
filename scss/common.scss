@@ -1,22 +1,26 @@
 @charset 'utf-8';
 @import './reset.scss';
-@mixin box{
+
+@mixin box {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     background-color: $bgColor;
+
     header {
         flex: none;
         width: 100%;
         background-color: $bgColor;
     }
-    section{
+
+    section {
         flex: 1;
         overflow: auto;
         background-color: $bgColor;
     }
 }
+
 @mixin main {
     margin-top: .466667rem;
     width: 100%;
@@ -65,9 +69,11 @@
         }
     }
 }
+
 $bgColor:#ffffff;
 $Color:#000000;
 $borderColor: #ff9344;
+
 footer {
     flex: none;
     width: 100%;

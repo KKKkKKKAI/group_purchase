@@ -1,29 +1,34 @@
 @charset 'utf-8';
 @import './common.scss';
+
 @mixin Class {
-    .top{
+    .top {
         margin-bottom: 0;
     }
 
-    .bottom{
+    .bottom {
         width: 100%;
         margin: .493333rem 0 .666667rem;
         display: flex;
         justify-content: space-around;
-        img{
+
+        img {
             width: 1.773333rem;
             height: 1.773333rem;
         }
     }
 }
-.classify{
+
+.classify {
     @include box;
-    header{
+
+    header {
         height: 1.4rem;
         display: flex;
         justify-content: space-around;
-        align-items: flex-end; 
-        button{
+        align-items: flex-end;
+
+        button {
             font-size: .346667rem;
             color: $Color;
             background-color: $bgColor;
@@ -32,7 +37,8 @@
             height: .76rem;
             border-radius: .266667rem;
         }
-        &>p{
+
+        &>p {
             width: 4.333333rem;
             font-size: .346667rem;
             height: .693333rem;
@@ -40,7 +46,8 @@
             text-align: center;
             line-height: .693333rem;
         }
-        div{
+
+        div {
             width: 2.12rem;
             height: .746667rem;
             font-size: .346667rem;
@@ -48,86 +55,104 @@
             justify-content: space-around;
             align-items: center;
             border: 2px solid $borderColor;
+
             img {
                 width: .426667rem;
                 height: .213333rem;
             }
         }
     }
-    section{
+
+    section {
         margin-top: .266667rem;
         width: 100%;
-        .slideshow{
+
+        .slideshow {
             height: 2.933333rem;
             width: 100%;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            ul{
+
+            ul {
                 width: 100%;
                 font-size: 0;
                 display: flex;
                 justify-content: space-around;
                 text-align: center;
-                img{
+
+                img {
                     width: 1.986667rem;
                     height: 1.986667rem;
                 }
-                p{
+
+                p {
                     font-size: .346667rem;
                     color: $Color;
                 }
             }
-            .dot{
+
+            .dot {
                 width: 100%;
                 display: flex;
                 justify-content: center;
-                div{
+
+                div {
                     width: .253333rem;
                     height: .24rem;
                     background-color: $borderColor;
                     border-radius: 50%;
                     margin-right: .093333rem;
                 }
-                div:not(:first-child){
+
+                div:not(:first-child) {
                     opacity: 0.7;
                 }
             }
         }
-        .cate{
+
+        .cate {
             @include main;
-            .top{
-                .left{
-                    img{
+
+            .top {
+                .left {
+                    img {
                         width: .72rem;
                         height: .56rem;
                     }
                 }
             }
+
             @include Class;
         }
-        .sport{
+
+        .sport {
             @include main;
-            .top{
-                .left{
-                    img{
+
+            .top {
+                .left {
+                    img {
                         width: .626667rem;
                         height: .773333rem;
                     }
                 }
             }
+
             @include Class;
         }
-        .movie{
+
+        .movie {
             @include main;
-            .top{
-                .left{
-                    img{
+
+            .top {
+                .left {
+                    img {
                         width: .706667rem;
                         height: .693333rem;
                     }
                 }
             }
+
             @include Class;
         }
     }

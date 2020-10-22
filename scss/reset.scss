@@ -1,4 +1,5 @@
 @charset 'utf-8';
+
 html,
 body {
     font-family: sans-serif, PingFangSC-Regular, "Noto Sans CJK SC", "Source Han Sans CN", Heiti, Heiti SC, DroidSans, DroidSansFallback, Arial, "Microsoft YaHei";
@@ -110,19 +111,24 @@ textarea {
     padding: 0;
     font-size: 1em;
     line-height: 1em;
-    outline:none;
+    outline: none;
     background-color: transparent;
 }
+
 /*去掉按下的阴影盒子*/
-input, textarea, a {
+input,
+textarea,
+a {
     -webkit-tap-highlight-color: transparent;
 }
-textarea{
-    resize:none;
+
+textarea {
+    resize: none;
     -webkit-appearance: none;
-} 
+}
+
 span {
-  display: inline-block
+    display: inline-block
 }
 
 a:active,
@@ -134,7 +140,12 @@ a,
 a:visited {
     text-decoration: none
 }
-a:focus{outline:none;}/*FF下 */
+
+a:focus {
+    outline: none;
+}
+
+/*FF下 */
 .wordWrap,
 label {
     word-wrap: break-word;
@@ -151,30 +162,47 @@ th {
     padding: 0
 }
 
-a,input{-webkit-tap-highlight-color:rgba(255,0,0,0);
+a,
+input {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
 }
-input::-webkit-input-placeholder{/* WebKit browsers */
-    color: #c7c7c7;
-}
-input:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
-    color: #c7c7c7;
-}
-input::-moz-placeholder{ /* Mozilla Firefox 19+ */
-    color: #c7c7c7;
-}
-input:-ms-input-placeholder{ /* Internet Explorer 10+ */
+
+input::-webkit-input-placeholder {
+    /* WebKit browsers */
     color: #c7c7c7;
 }
 
-textarea::-webkit-input-placeholder{/* WebKit browsers */
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
     color: #c7c7c7;
 }
-textarea:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
     color: #c7c7c7;
 }
-textarea::-moz-placeholder{ /* Mozilla Firefox 19+ */
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
     color: #c7c7c7;
 }
-textarea:-ms-input-placeholder{ /* Internet Explorer 10+ */
+
+textarea::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #c7c7c7;
+}
+
+textarea:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #c7c7c7;
+}
+
+textarea::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #c7c7c7;
+}
+
+textarea:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
     color: #c7c7c7;
 }
